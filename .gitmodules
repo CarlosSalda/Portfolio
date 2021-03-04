@@ -7,3 +7,6 @@
 [submodule "2020s2-Grupo06"]
 	path = 2020s2-Grupo06
 	url = git@github.com:unq-ui/2020s2-Grupo06.git
+[submodule "tp-integrador-vinchucas-ag-ero-madrid-salda-a"]
+	path = tp-integrador-vinchucas-ag-ero-madrid-salda-a
+	url = https://gitlab.com/carlosjoel95/tp-integrador-vinchucas-ag-ero-madrid-salda-a.git
