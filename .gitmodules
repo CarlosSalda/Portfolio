@@ -4,3 +4,6 @@
 [submodule "Intellipipol-TP"]
 	path = Intellipipol-TP
 	url = git@github.com:EPERS-UNQ/Intellipipol-TP.git
+[submodule "2020s2-Grupo06"]
+	path = 2020s2-Grupo06
+	url = git@github.com:unq-ui/2020s2-Grupo06.git
