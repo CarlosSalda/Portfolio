@@ -1,0 +1,49 @@
+:root {
+  --colorBackground: #35495e;
+  --colorLetras: #eee;
+  --colorBotones: #196e48;
+  --colorBotonesHover: #4bca91;
+  --colorContentBotones: snow;
+}
+
+/*CSS Tags*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--colorBackground);
+  color: var(--colorLetras);
+}
+
+button {
+  background-color: var(--colorBotones);
+  border: none;
+  padding: 2rem;
+  color: var(--colorContentBotones);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  border-color: var(--colorBotonesHover);
+}
+
+/*CSS Clases*/
+.app {
+  display: block;
+  text-align: center;
+}
+
+.count {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
