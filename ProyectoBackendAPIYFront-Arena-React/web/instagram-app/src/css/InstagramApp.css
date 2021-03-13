@@ -1,0 +1,183 @@
+html, body, #InstagramApp {
+  height: 100vh;
+  font-size: 1.5vw;
+}
+
+    .StartWrapper {
+        display: grid;
+        grid-template-columns: repeat(4, [col] auto ) ;
+        grid-template-rows: repeat(3, [row] auto  );
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        min-height: 100%;
+    }
+
+    .box {
+        background-color: rgb(20, 20, 20);
+        color: #fff;
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        font-family: fantasy;
+        font-style: oblique, bold;
+        min-height: fit-content;
+    }
+
+    .Header {      
+      grid-column: col / span 4;
+      grid-row: row;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      height: 6.6vh;
+    }
+
+    .ImageLeft{
+      height: 3.97vh;
+      grid-column: col 1;
+    }
+
+    .ImageCenter{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      height: 3.97vh;
+      grid-column: col 2 / span 2;
+    }
+
+    .ImageRight{
+      float: right;
+      height: 3.97vh;
+      grid-column: col 4 / span 1;
+      border-radius: 50%;
+      border: 2px;
+    }
+
+    .Lateral {
+        grid-column: col / span 2;
+        grid-row: row 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(238, 137, 14);
+        height: 86.8vh;
+        width: 60vw;
+    }
+
+    .Logo{
+      grid-column: 1;
+      height: 70vh;
+      margin: auto;
+      margin-right: -6vh;
+    }
+
+    .Description{
+      margin-left: 3vh;
+      margin-right: auto;
+      display: block;
+      align-self: center;
+      grid-column: 2;
+    }
+
+    .Container{
+      background-color: rgb(48, 46, 46);
+        grid-column: col 3 / span 2;
+        grid-row: row 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 40vw ;
+    }
+
+    .Followers{
+      width: 25vh;
+    }
+
+    .FormTitle{
+      padding-bottom: 3vh;
+      text-align: center;
+    }
+
+    .Form {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      grid-column: 1 / span 2;
+      grid-row: 1;
+      align-self: flex-end;
+      padding: 1vh;
+    }
+
+    .FormVisible{
+      visibility: visible;
+    }
+
+    .FormOculto{
+      display: none;
+      visibility: hidden;
+    }
+
+    .ErrorVisible{
+      visibility: visible;
+      font-size: 2vh;
+      color: gold;
+    }
+
+    .ErrorOculto{
+      display: none;
+      visibility: hidden;
+    }
+
+    .Button{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      font-weight: 400;
+      color: black;
+      text-align: center;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      width: 15vw;
+    }
+
+    .ButtonLeft> .Button {
+        grid-column: 1;
+        grid-row: 2;
+      color: black;
+      background-color: rgb(238, 137, 14);
+      border-color: rgb(238, 137, 14);
+    }
+
+    .ButtonRight> .Button {
+      color: black;
+      background-color: rgb(238, 137, 14);
+      border-color: rgb(238, 137, 14);
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .Bottom {
+      grid-column: col  / span 4;
+      grid-row: row 3;
+      height: 6.6vh;
+      
+    }
+
+#userDateHome {
+  width: 1900px;
+}
+
+#myProfileId {
+  margin-top: -15px;
+}
+
+#myLogOutId {
+  margin-top: -15px;
+}

@@ -1,0 +1,13 @@
+.UserResult{
+    display: block;
+    text-align: center;
+    
+    width: 75vw;
+    grid-template-columns: 1fr 1fr;
+    color: darkgray;
+    font-size: 2vw;
+}
+
+.botonResult{
+    margin: 3vw;
+}

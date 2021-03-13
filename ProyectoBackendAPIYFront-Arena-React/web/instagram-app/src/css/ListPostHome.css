@@ -1,0 +1,45 @@
+.UserPostWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: auto;
+    column-gap: 3vw;
+    grid-row-gap: 4vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 5vh;
+    margin-bottom: auto;
+}
+
+.UserData{
+    display: block;
+    text-align: center;
+    
+    width: auto;
+    grid-template-columns: 2fr;
+    padding: 1vw;    
+    color: darkgray;
+    font-size: 2vw;
+}
+
+#postOU {
+    width: 20vw;
+    border-color: slategrey;
+    border-radius: 2vw;
+}
+
+#postOU:hover {
+    border-style: solid;
+    border-color: black;
+} 
+
+#LocalUser {
+    width: 7vw;
+}
+
+#nameOU {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#buttonfollow {
+    margin: 1vw;
+}

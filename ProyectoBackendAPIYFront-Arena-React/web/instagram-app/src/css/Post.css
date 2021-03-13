@@ -1,0 +1,50 @@
+.Post{
+    width: 100%;
+    display: block;
+    align-content: center;
+    height: fit-content;
+    grid-template-columns: 2fr;
+    padding: 2vw;
+    color: black;
+    text-align: center;
+}
+
+.PostInfo{
+    display: block;
+    text-align: center;
+    width: 100%;
+    
+    grid-template-columns: 2fr;
+    color: darkgray;
+    font-size: 2vw;
+}
+
+.Image {
+    width: 70vw;
+    background-color: darkgray;
+    padding: 2vw;
+    margin: 0vw;
+}
+
+.Comment{
+    align-self: center;
+    text-align: left;
+    margin-top: 1vw;    
+    margin-left: 4vw;
+    margin-right: 4vw;
+    color: black;
+    display: block;
+    border-radius: 1vw;
+}
+
+.namePostUser {
+    font-family: inherit;
+    color: black;
+    margin-left: 43px;
+    margin-top: -40px;
+}
+
+.bodyComment {
+    margin: 1vh;
+    margin-top: -1vh;
+}
