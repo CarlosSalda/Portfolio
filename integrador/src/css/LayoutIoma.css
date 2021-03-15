@@ -1,0 +1,62 @@
+:root {
+  --srcLogo: "../images/logoIoma2020.png";
+  --bgcMainNavBar: #00b1c7;
+--bgcDropdown: #dee2e6;
+  --bgcUsersIcon: #9fe8ff;
+}
+
+/* NavBar CSS*/
+#mainNavbar {
+  background-color: var(--bgcMainNavBar);
+  height: 3.5rem;
+}
+
+.logoIoma {
+  /*No se puede setear un var(--algo) dentro de un content, por eso no se usa la variable del root*/
+  content: url("../images/logoIoma2020.png");
+  width: 5.5%;
+}
+
+
+.logoGba {
+  content: url("../images/logo_gba.png");
+  width: 6.5%;
+}
+
+.svgUser {
+  width: 2.5rem;
+}
+
+.svgExit {
+  width: 2.5rem;
+}
+
+.divIcons {
+  margin-left: 40%;
+}
+
+
+/*drop down menu*/
+.dropdown-toggle {
+    margin-left: -1.2rem;
+    border: 2px groove #017dfb;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dropdown-toggle:hover {
+    background-color: var(--bgcUsersIcon);
+}
+
+#dropdownMenu {
+    width: 15rem;
+    height: 10rem;
+    background-color: var(--bgcDropdown);
+    margin-left: -0.96rem;
+    margin-top: -0.48rem;
+}
+
+#btnShow {
+    padding: 1rem;
+}
+
