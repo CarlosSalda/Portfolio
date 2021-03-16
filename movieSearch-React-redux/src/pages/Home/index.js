@@ -25,7 +25,7 @@ export default ({history}) => {
   };
 
   const handleSearchText = (event) => {
-		history.push(`/results?MovieName=${searchText}`);
+		history.push(`/results?movieName=${searchText}`);
   };
 
   return (

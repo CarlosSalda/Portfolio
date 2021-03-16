@@ -1,10 +1,19 @@
-import axios from 'axios';
+import axios from "axios";
 
-const baseURL= 'https://www.omdbapi.com/?apiKey=ffd0c3a5';
+const baseURL = 'http://www.omdbapi.com/?i=tt3896198&apikey=8e02a2a8';
 
-export const apiCall = (url, data,headers, method) => axios({
-	method,
-	url: baseUrl + url,
-	data,
-	headers
-})
+export const apiCall = (url2, data, headers, method) =>
+  axios({
+    method,
+    url: baseURL + url2,
+    data,
+    headers,
+  });
+
+  export const apiCallId = (url2, data, headers, method) =>
+  axios({
+    method,
+    url: 'http://www.omdbapi.com/'+ url2 +'&apikey=8e02a2a8',
+    data,
+    headers,
+  });
