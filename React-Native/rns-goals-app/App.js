@@ -97,6 +97,9 @@ const styles = StyleSheet.create({
   screen: {
     padding: 50,
   },
+  text: {
+    fontSize: 20
+  },
   buttonContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -104,7 +107,7 @@ const styles = StyleSheet.create({
   },
   button: {
     width: '40%',
-    
+    borderRadius: 10
   },
   input: {
     width: "80%",

@@ -2,36 +2,36 @@ import React, { useState } from "react";
 import { StyleSheet, View, TextInput, Button, Modal } from "react-native";
 
 const GoalInput = (props) => {
-  const [enteredGoal, setEnteredGoal] = useState({title: '', goal: ''});
+  const [enteredGoal, setEnteredGoal] = useState({ title: "", goal: "" });
 
   const goalInputHandler = (e) => {
     setEnteredGoal({
       ...enteredGoal,
-        goal: e
+      goal: e,
     });
   };
 
   const goalTitleHandler = (e) => {
     setEnteredGoal({
       ...enteredGoal,
-      title: e
+      title: e,
     });
-  }
+  };
 
   const addGoalHandler = (event) => {
     props.onAddGoal(enteredGoal);
-    setEnteredGoal({title: '', goal: ''});
+    setEnteredGoal({ title: "", goal: "" });
   };
 
   const goToBlank = (props) => {
-    setEnteredGoal({title: '', goal: ''});
-    props.onCancel()
-  }
+    setEnteredGoal({ title: "", goal: "" });
+    props.onCancel();
+  };
 
   return (
     <Modal visible={props.visible} animationType="slide">
       <View style={styles.inputContainer}>
-      <TextInput
+        <TextInput
           placeholder="Title"
           style={styles.input}
           onChangeText={goalTitleHandler}
@@ -45,10 +45,19 @@ const GoalInput = (props) => {
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button title="CANCEL" color="red" onPress={() => goToBlank(props)} />
+            <Button
+              title="CANCEL"
+              color="red"
+              onPress={() => goToBlank(props)}
+            />
           </View>
           <View style={styles.button}>
-            <Button disabled= {enteredGoal.title == 0 || enteredGoal.goal.size == 0} id= "buttonAdd" title="ADD" onPress={addGoalHandler} />
+            <Button
+              disabled={enteredGoal.title == 0 || enteredGoal.goal.size == 0}
+              id="buttonAdd"
+              title="ADD"
+              onPress={addGoalHandler}
+            />
           </View>
         </View>
       </View>
@@ -71,6 +80,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     padding: 10,
     marginBottom: 10,
+    borderRadius: 20,
   },
   buttonContainer: {
     flexDirection: "row",
@@ -78,7 +88,7 @@ const styles = StyleSheet.create({
     width: "60%",
   },
   button: {
-    width: '40%'
+    width: "40%",
   },
 });
 
